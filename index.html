@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шрек - Лабораторна робота 4</title>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+    <!-- Іконка сайту -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Підключення соціальних іконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Підключення шрифтів -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="#">Шрек</a>
+        <ul>
+            <li><a href="#story-section">Сюжет</a></li>
+            <li><a href="#map-section">Локації</a></li>
+            <li><a href="#video-section">Відео</a></li>
+            <li><a href="#audio-section">Аудіо</a></li>
+            <li><a href="#social-section">Соціальні мережі</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>Ласкаво просимо на сторінку мультфільму "Шрек"</h1>
+            <p>Дізнайтесь більше про культовий анімаційний фільм, його персонажів, місця та пригоди.</p>
+        </div>
+    </header>
+    
+    <main>
+        <section id="story-section" class="story">
+            <h2>Про мультфільм</h2>
+            <h3>Сюжет</h3>
+            <p>Мультфільм "Шрек" розповідає історію зеленої огра, який живе на болоті та насолоджується самотністю. Все змінюється, коли лорд Фаркуад виселяє казкових персонажів на територію Шрека. Щоб повернути спокій у своє життя, Шрек укладає угоду з Фаркуадом: він врятує принцесу Фіону, яка зачарована та живе в замку, охоронюваному драконом. Під час цієї пригоди Шрек знаходить друзів, справжнє кохання та розуміє, що важливо бути собою.</p>
+        </section>
+
+        <section id="map-section">
+            <h2>Карта місцевості</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.9451607105996!2d-85.494293184679!3d35.40958198024681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzXCsDI0JzM0LjkiTiA4NcKwMjknNDcuMyJX!5e0!3m2!1suk!2sua!4v1733887200000" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>Відео про мультфільм "Шрек"</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CwXOrWvPBPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="audio-section">
+            <h2>Аудіо "All Star"</h2>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="audio/sample.mp3" type="audio/mpeg">
+                    Ваш браузер не підтримує аудіо.
+                </audio>
+            </div>
+        </section>
+
+        <section class="actors-section">
+            <h2>Головні персонажі</h2>
+            <div class="actors-container">
+                <div class="actor-card">
+                    <img src="data:image/jpeg;base64,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" alt="Шрек">
+                    <h4>Шрек</h4>
+                    <p>Головний герой, зелений огр, який вирушає на рятувальну місію, щоб повернути спокій у своє життя.</p>
+                </div>
+                <div class="actor-card">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFoAWgMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAMBAv/EADYQAAEDAwIDBQYDCQAAAAAAAAEAAgMEBRESIQYxQRNRYXHBBxQiI1KRFYGxFiQyQkNTkrLh/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAMCAQT/xAAeEQEBAAMAAgMBAAAAAAAAAAAAAQIRITFBAxJRIv/aAAwDAQACEQMRAD8A3FERBz3Cjir6KeknHy5oyx35rDuIO2hZURVWRXQEQzN5Fz2nLHjzGN1vKyz2wUVOaugqWtLZ3RuEhY34nNBGP9is5T21jfTNeLpZ79xNNUU8wc2UtwNe7dhnbwVm4m4i/FbnRWumy6025jdJ/vyacE+Q5fc9VwRwQimgLacxtki7Rrnnm3OPLoU4cstLcL1SingeWGpZHOwghjs7kHGDyBOfDms/bfGvrrq78D2OW6V0ddUNHudNJrJPKaUcgPBuxz3jwK09ecEMVPEyKCNscTAGtYwYDR3AL0W5NMW7ERF1wREQEREHlUzx00Ek8ztMcbS5x7gFlt5vcddc/fqjGpjSyNrjsxueWOq0DiyN8vD1c2LOvstW3UA5P6LA5qj97kM+osYc6W9Qp5/jeC7m4WqOWljuUYllqIy+OP8AhYGjHQc+amBV0VF2dVbGRxzAjDdOQVnd0u7KnshG5jA1o0k9Auu2VrWSMMswe0c/iGyxrS3luNqr47lRsqI9s7Ob9J6hdiqfA2ourSzPu+QB57+itirjdx57NUREWnBERAREQfCA4EEZB2IWG8b2EWS/FjDmnkAkjPc0k7HywtzWX+1OLtrxTNHSlBP+TljPw1j5USkipLRW1DainZLDU6ZGamZw4Ag58DnP5KxWllrugigtdlijrDU6onuYG9N/HAUeyiN0pm0zWk1EDctPVzR08wrn7N7dT01fIHBz6mOHUXO6ZOMLE7xTeurxZrdHaqCOljOotGXvPN7jzJXciKyIiIgIiICIiD4s547cJL5IekdO1h8OZ9VoyoE7GXevqJ37wPlO/wBQGAB9gFP5LxvCdQdgonUtLNXytIfK3THn6f8AqleBJXftI/ufTvB+7T6Lrurm+6lrMADYAdAq1ark62XeKsALgx2HDvadiFKX+tqWbjYUXnTzx1ELJoXh8bxlrgcghei9KAiIgIiICIvhQV/i+7+40fu0LsVE4Iz9Dep9FA2z4afALe9QPGVxM1/eS7LQ/SAD0GwUtQTfJByMHoOS8+d3VcJp+bq89kSDnHPCqs50uJIwrVcy0wOxlVeojDm4b5rmnbV49m1yL46i3yOPwfNjB6Dk4ffH3V5WTcCvdFxPSNb/ADte0+Wkn0WshXw8J5ToiItMiIiAiIUGC3qUPusrj0fhTNoqXSNDHO6dT4Kt8QE/i0m/9c/qpmy81CxaLAHamb/FkKAOD2g7iR5Kah2lAHeFAUO76zO/z5OfmVyFd/C9SKTiOgleQGdpoJPTUCPVbCsJdtpI55C3KmJNPEScksH6Knx3jGceiIiowIiIP//Z" alt="Осел">
+                    <h4>Осел</h4>
+                    <p>Вірний друг Шрека, який завжди готовий до пригод і не припиняє говорити.</p>
+                </div>
+                <div class="actor-card">
+                    <img src="data:image/jpeg;base64,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" alt="Фіона">
+                    <h4>Принцеса Фіона</h4>
+                    <p>Прекрасна принцеса, яка ховає секрет і змінює уявлення про класичні казки.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-section">
+            <h2>Соціальні мережі про Шрека</h2>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/Shrek" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/Shrek" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com/Shrek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Лабораторна робота №4. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
